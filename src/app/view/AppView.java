@@ -18,14 +18,15 @@ public class AppView {
         System.out.print("Enter product price, USD: ");
         String price = scanner.nextLine().trim();
         System.out.println("Deliver product? + or -");
-        String deliver = scanner.nextLine().trim();
+        String type_shopping = scanner.nextLine().trim();
         String address = "";
-        if (deliver.equals("+")){
+        if (type_shopping.equals("+")) {
             System.out.println("Address for delivered?: ");
             address = scanner.nextLine().trim();
         }
         scanner.close();
-        return new String[]{name, phone, quantity, price, deliver, address};
+
+        return new String[]{name, phone, quantity, price, type_shopping, address};
     }
 
     public void getOutput(String output) {
