@@ -1,6 +1,5 @@
 package app.model.impl;
 
-import app.entity.Delivery;
 import app.entity.Purchase;
 import app.model.AppModel;
 
